@@ -9,4 +9,4 @@ eureka:
       instanceId: ${spring.application.name}:${server.port:8889}
   client:
     serviceUrl:
-      defaultZone: default
+      defaultZone: http://localhost:8889/eureka/
