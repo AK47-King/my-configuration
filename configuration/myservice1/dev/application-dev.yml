@@ -1,0 +1,12 @@
+message:
+  fallbackmsg: Lucky day! - dev
+
+eureka:
+  instance:
+    hostname: localhost
+    leaseRenewalIntervalInSeconds: 20
+    metadataMap:
+      instanceId: ${spring.application.name}:${server.port:8889}
+  client:
+    serviceUrl:
+      defaultZone: default
